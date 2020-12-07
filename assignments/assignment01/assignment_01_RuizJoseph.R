@@ -70,7 +70,7 @@ weekdays2_mean <- mean(week2_sleep[weekdays])
 weekdays1_mean > weekdays2_mean
 
 ## Determine how many days in week 1 had over 8 hours of sleep using the `>` operator
-week1_sleep_weekdays > 8
+week1_sleep > 8
 
 ## Create a matrix from the following three vectors
 student01 <- c(100.0, 87.1)
@@ -94,7 +94,7 @@ students <- c("Florinda Baird", "Jinny Foss", "Lou Purvis", "Nola Maloney")
 
 rownames(grades) <- students
 colnames(grades) <- assignments
-print(grades)
+#print(grades)
 ## Total points for each assignment using `colSums()`
 colSums(grades)
 
@@ -138,7 +138,7 @@ ring_bearer <- c(FALSE, TRUE, TRUE, FALSE, TRUE, TRUE, FALSE, TRUE, TRUE)
 age <- c(88, 129, 51, 7000, 36, 2019, 2931, 7052, 589)
 
 characters_df <- data.frame(name,race, in_fellowship, ring_bearer, age)
-head(characters_df)
+#head(characters_df)
 ## Sorting the characters_df by age using the order function and assign the result to the sorted_characters_df
 sorted_characters_df <- characters_df[order(age),]
 ## Use `head()` to output the first few rows of `sorted_characters_df`
@@ -148,3 +148,4 @@ head(sorted_characters_df)
 ringbearers_df <- characters_df[characters_df$ring_bearer == TRUE,]
 ## Use `head()` to output the first few rows of `ringbearers_df`
 head(ringbearers_df)
+
